@@ -1,37 +1,29 @@
 
-
-*, *:before, *:after
-{
--moz-box-sizing: border-box; -webkit-box-sizing;
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
 }
+
+img,video{
+width: auto;
+max-width: 100%;
+height: auto;
+}
+
 
 body {
 width:96%;
 margin:0 auto;
 border:1px solid #666;
-background-color: #4471AF;
+background-color: #E0E0E0;
+font-size: 100%;
+line-height: 1.5;
+font-family: ;
 }
 
-.track{
-	width:86%;
-	background-color: #4471AF;
-	padding: 10px
-	;
-}
 
-.session {
-margin:auto;
-width:86%;
-background-color: red;
-
-}
-
-.speakers {
-margin:auto;
-width:86%;
-background-color: #4471AF;
-
-}
 
 
 h1
@@ -79,8 +71,13 @@ p
 		text-align:justify;
 		text-indent:0px;
 		text-decoration:none;
+		margin-bottom: 1em;
 	}
 
+
+	/* =======================================
+Sessions page
+======================================= */
 p.presenter
 
 	{	
@@ -92,6 +89,80 @@ p.presenter
 		text-indent:0px;
 		text-decoration:none;
 	}
+
+.track{
+	width:86%;
+	background-color: #4471AF;
+	padding: 10px
+	;
+}
+
+.session {
+margin:auto;
+width:86%;
+background-color:red;
+;
+}
+
+	/* =======================================
+speakers page
+======================================= */
+body#speakers{
+	background-color: orange;
+}
+.track{
+	width:86%;
+	background-color: #E0E0E0;
+	padding: 10px
+	;
+}
+
+.speakers {
+margin:auto;
+width:95%;
+background-color:red;
+padding:5px;
+;
+}
+
+/* =======================================
+About page
+======================================= */
+.directions{
+	
+}
+.directions h2{
+	text-transform: uppercase;
+}
+
+.directions-type{
+	padding-left:10px;
+	padding-top:10px;
+	margin:auto;
+	width:86%;
+}
+
+
+.location {
+	margin:auto;
+	width:86%;
+	background-color:green;
+	}
+
+.map {
+	margin:auto;
+	width:86%;
+	background-color:purple;
+	}
+
+.subway {
+
+	background-color:gray;
+	}
+
+.bus{
+	background-color:blue;
+}
 
 
 
